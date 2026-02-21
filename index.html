@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <style>
+    /* ===== Body / Page ===== */
+    body {
+      background-color: #f0f0f0;      /* Page background */
+      font-family: Verdana, sans-serif; /* Default font */
+      color: #333333;                 /* Default text color */
+      text-align: center;             /* Default horizontal alignment */
+      margin: 0;                       /* Remove default page margins */
+      padding: 0;
+    }
+
+    /* ===== Headings ===== */
+    h1, h2, h3 {
+      color: #3498db;                 /* Heading text color */
+      font-family: 'Arial', sans-serif; /* Heading font */
+      font-weight: bold;              /* Bold headings */
+      text-align: center;             /* Center headings */
+      margin-top: 20px;               /* Space above heading */
+      margin-bottom: 10px;            /* Space below heading */
+    }
+
+    /* ===== Paragraphs ===== */
+    p {
+      color: #555555;                 /* Paragraph text color */
+      font-size: 18px;                /* Font size */
+      line-height: 1.5;               /* Line spacing */
+      text-align: justify;            /* Alignment: left / center / right / justify */
+      margin: 20px auto;              /* Top/bottom space + center horizontally */
+      width: 80%;                     /* Limit paragraph width */
+    }
+
+    /* ===== Special Highlight ===== */
+    .highlight {
+      background-color: #e74c3c;      /* Red background */
+      color: white;                    /* Text color */
+      padding: 10px;                   /* Space inside the box */
+      margin: 20px auto;               /* Space outside + center */
+      border-radius: 5px;              /* Rounded corners */
+      width: 50%;                       /* Box width */
+    }
+
+    /* ===== Boxes / Divs ===== */
+    .box {
+      background-color: #2ecc71;      /* Green box */
+      color: white;                    /* Text color */
+      padding: 20px;                   /* Inner spacing */
+      width: 200px;                     /* Box width */
+      margin: 40px auto;               /* Center horizontally + spacing */
+      position: relative;              /* Move with top/left */
+      top: 20px;                       /* Move down */
+      left: 0px;                       /* Move right/left */
+    }
+
+    /* ===== Flexbox Layouts ===== */
+    .flex-center {
+      display: flex;
+      justify-content: center; /* Horizontal center */
+      align-items: center;     /* Vertical center */
+      flex-direction: column;  /* Stack items vertically */
+      height: 100vh;           /* Full viewport height */
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>My first GitHub Pages site.</p>
+
+  <h1>Welcome to My Website</h1>
+
+  <p>This is a normal paragraph with default styling. You can add more text here to describe your website.</p>
+
+  <p class="highlight">This is a highlighted paragraph! Perfect for announcements or important info.</p>
+
+  <div class="box">This is a colored box. You can move it, change its size, or color.</div>
+
+  <div class="flex-center">
+    <p>This paragraph is centered vertically and horizontally using Flexbox!</p>
+  </div>
+
 </body>
 </html>
